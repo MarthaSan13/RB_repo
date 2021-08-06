@@ -1,0 +1,204 @@
+/* INICIO ESTILOS PAGINA PROPIEDADES */
+
+.propiedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;    
+        &--bg1{
+            background: $carmesi;
+        }
+        &--bg2{
+            background: $turmenic;
+        }
+        &--bg3{
+            background: $ambar;
+        }
+        &--bg4{
+            background: $menta;
+        }
+        &--bg5{
+            background: $palta;
+        }
+        &--bg6{
+            background: $indigo;
+        }
+        &--bg7{
+            background: $malva;
+        }
+    }
+    &__pic{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        height: 650px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: center;
+        width: 50%;
+        &--img1{  
+            background-color: $carmesi;            
+            background-image: url('../img/berries.jpg');            
+        }
+        &--img2{
+            background-color: $turmenic;
+            background-image: url('../img/pumkings.jpg');  
+        }
+        &--img3{
+            background-color: $ambar;
+            background-image: url('../img/oranges.jpg');  
+        }
+        &--img4{
+            background-color: $menta;
+            background-image: url('../img/kiwi.jpg');
+        }
+        &--img5{
+            background-color: $palta;
+            background-image: url('../img/greens.jpg');
+        }
+        &--img6{
+            background-color: $indigo;
+            background-image: url('../img/blackberries.jpg');
+        }
+        &--img7{
+            background-color: $malva;
+            background-image: url('../img/blackpeach.jpg');
+        }
+    }
+    &__title{
+        font-family: 'Josefin Sans';
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+        &--t2{        
+            color: $darkblue;        
+        }
+    }
+    &__descrip{
+        height: 400px;
+        width: 50%;
+        &--bg1{  
+            background: $carmesi;
+        }
+        &--bg2{
+            background: $turmenic;
+        }
+        &--bg3{
+            background: $ambar;
+        }
+        &--bg4{
+            background: $menta;
+        }
+        &--bg5{
+            background: $palta;
+        }
+        &--bg6{
+            background: $indigo;
+        }
+        &--bg7{
+            background: $malva;
+        }
+    }
+    &__text{
+        color: white;
+    }
+    
+}
+
+.modal-new {  
+    backdrop-filter: blur(10px);  
+    background: #00000080; 
+    border: 1px solid rgba(0,0,0,.2);  
+}
+.modal-title {
+    color: $menta;
+    padding: 0px;
+    font-family: 'Source Sans Pro';
+}
+.pModal{
+    color: white;
+}
+.myCloseBtn {
+    color: #000;
+    background-color: $menta;
+    border: darken($color: $menta, $amount: 30%) solid 2px;
+}
+.myBtn1{
+    background: $turmenic;
+    border: darken($color: $turmenic, $amount: 10%)  solid 2px;
+    margin: 30px;
+    &:hover,&:focus{        
+        background: darken($color: $turmenic, $amount: 10%);
+        border: darken($color: $turmenic, $amount: 20%) solid 2px;
+    }
+}
+.myBtn2 {
+    background: $ambar;
+    border: darken($color: $ambar, $amount: 10%)  solid 2px;
+    margin: 30px;
+    color: black;
+    &:hover,&:focus{        
+        background: darken($color: $ambar, $amount: 10%);
+        border: darken($color: $ambar, $amount: 20%) solid 2px;
+    }
+}
+.myBtn3 {
+    background: $menta;
+    border: darken($color: $menta, $amount: 10%)  solid 2px;
+    margin: 30px;
+    color: black;
+    &:hover,&:focus {        
+        background: darken($color: $menta, $amount: 10%);
+        border: darken($color: $menta, $amount: 20%) solid 2px;
+    }
+}
+.myBtn4 {
+    background: $palta;
+    border: darken($color: $palta, $amount: 10%)  solid 2px;
+    margin: 30px;
+    color: black;
+    &:hover,&:focus {        
+        background: darken($color: $palta, $amount: 10%);
+        border: darken($color: $palta, $amount: 20%) solid 2px;
+    }
+}
+.myBtn5 {
+    background: $indigo;
+    border: darken($color: $indigo, $amount: 10%)  solid 2px;
+    margin: 30px;
+    color: black;
+    &:hover,&:focus {        
+        background: darken($color: $indigo, $amount: 10%);
+        border: darken($color: $indigo, $amount: 20%) solid 2px;
+    }
+}
+.myBtn6 {
+    background: $malva;
+    border: darken($color: $malva, $amount: 10%)  solid 2px;
+    margin: 30px;
+    &:hover,&:focus {
+        color: black;
+        background: darken($color: $malva, $amount: 10%);
+        border: darken($color: $malva, $amount: 20%) solid 2px;
+    }
+}
+
+.myBtn7 {
+    background: $carmesi;
+    border: darken($color: $carmesi, $amount: 10%)  solid 2px;
+    margin: 30px;
+    &:hover,&:focus {
+        color: black;
+        background: darken($color: $carmesi, $amount: 10%);
+        border: darken($color: $carmesi, $amount: 20%) solid 2px;
+    }
+}
+
+/* FIN ESTILOS PAGINA PROPIEDADES */

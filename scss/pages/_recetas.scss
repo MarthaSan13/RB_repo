@@ -1,0 +1,61 @@
+/* INICIO ESTILOS PAGINA RECETAS */
+.recetas{
+    display: grid;
+    grid-template-columns: 25% 20% 25% 20%;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 20px;
+
+    &__video{
+        padding: 20px;
+        background: #08070c;
+    }
+    &__pic{
+        background-position: center;
+        background-size: cover;
+        &--img1{
+           background-image: url('../img/recipe1.jpg');    
+        }
+        &--img2{
+            background-image: url('../img/recipe2.jpg'); 
+        }
+        &--img3{
+            background-image: url('../img/recipe3.jpg');
+        }
+        &--img4{
+            background-image: url('../img/recipe4.jpg');
+        }
+    }
+    &__text{
+        position: relative;
+        top: 4%;
+        background-color: #09090d26;
+        color: #ffffff;
+        text-align: right;
+        font-size: 20px;
+        font-style: italic;
+        padding: 40% 30px;
+        filter: drop-shadow(6px 6px 6px black);
+    }
+}
+
+.wide{
+    display: block!important;
+    right: 0%;
+    left: 0%;
+    bottom: 0rem;
+    background-image: linear-gradient(360deg, black, transparent);
+  }
+.hCarousel{  
+    color: $biche;
+    font-weight: bold;
+    filter: drop-shadow(2px 2px 2px black);
+}
+.pCarousel{
+    color: white;
+}
+.h100{
+    height: 100vh;
+}
+  /* FIN ESTILOS PAGINA RECETAS */
+
