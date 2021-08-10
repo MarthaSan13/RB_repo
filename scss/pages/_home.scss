@@ -14,13 +14,13 @@
         background-position-x: center;
         transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out, border-radius 300ms ease-in-out;
         &--img1{            
-            background-image: url('../../img/tomato.jpg');
+            background-image: url('../img/tomato.jpg');
         }
         &--img2{
-             background-image: url('../../img/punk.jpg');
+             background-image: url('../img/punk.jpg');
         }
         &--img3{
-            background-image: url('../../img/banana.jpg');
+            background-image: url('../img/banana.jpg');
         }    
         &--img4{
             background-image: url('../img/guanabanaa.jpg');
