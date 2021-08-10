@@ -93,15 +93,6 @@
 
     .recetas {
         display: grid;
-        grid-template-areas:
-            "img1"
-            "vid1"
-            "img2"
-            "vid2"
-            "img3"
-            "vid3"
-            "img4"
-            "vid4";
         grid-template-columns: auto;
     }
     .recetas__video{
@@ -178,11 +169,6 @@
 
     .recetas {
         display: grid;
-        grid-template-areas:
-            "vid1 img1"
-            "vid2 img2"
-            "vid3 img3"
-            "vid4 img4";
         grid-template-columns: 45% 45%;
     }
 }
