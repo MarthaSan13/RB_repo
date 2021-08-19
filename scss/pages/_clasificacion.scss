@@ -115,7 +115,7 @@
         padding: 30px;
         margin: 0px;
         &:hover{
-            color: #a3e048;
+            color: $superbiche;
         }        
     }
     &__pic:hover &__tittle{
@@ -166,11 +166,13 @@
     }
     &__datos{
         width: 50%;
+        padding: 0px 20px;
     }
     &__text{
+        text-align: justify;
         color: #ffffff;
-        background: #00000030;
-        border-radius: 10em;
+        border-radius: 1em;
+        backdrop-filter: blur(10px);
         &--main{
             width: 70%;
             padding: 20px 60px;
@@ -178,7 +180,7 @@
     }
     .descrip-clasificacion__title{
         @extend .menu-clasificacion__link;
-        color: #baf113;;
+        color: $superbiche;
         font-size: 40px;
     }
 }

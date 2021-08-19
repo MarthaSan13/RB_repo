@@ -3,10 +3,21 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
-    font-family: neon;
-    src: url(hellodenverdisplayregular_v1.6.ttf);
-  }
+    font-family: 'Josefin';
+    src: url('../../fonts/JosefinSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+} 
+
+@font-face {
+    font-family: 'hollowIn';
+    src: url('../../fonts/NeonGlowBold-YxJv.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+} 
+
 html{
     scroll-behavior: smooth;
 }
@@ -81,7 +92,7 @@ h1{
 }
 p{
     color: #090d13;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     padding: 30px;
     margin: 0px;
@@ -104,15 +115,22 @@ input{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
+    overflow: inherit;
 }
 .mainBD{
     backdrop-filter: blur(5px);
 }
 .headerTBG{
-    display: flex;
+    height: 15vh;
+    display: flex;    
     flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background: $darkblue;
+    background-image: url('../img/wall.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
     backdrop-filter: blur(10px);
 }
 .headerT{    
@@ -146,13 +164,11 @@ input{
     position: relative;
     top: 0;
     left: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Righteous', cursive;
     font-family: 'Fredoka One', cursive;
+    font-family: 'hollowIn';
     font-weight: lighter;
-    color: $darkblue;
-    color: #212529;
-    padding: 0 20px;
+    color: white;
+    padding: 0 10px;
     text-shadow: 0 4px 20px #ff005b;    
     &:after
     {
@@ -160,22 +176,22 @@ input{
       position: absolute;
       top: 0;
       left: 0;
-      padding: 4px 25px;
+      padding: 2px 15px;
       z-index: -1;
       color: #ff005b;
       filter: blur(1px);
     }
-    &:before{
+&:before{
       content: '';
       position: absolute;
-      top: 16%;
-      left: 3%;
-      width: 93%;       
-      height: 72%;
+      top: 0%;
+    left: 8%;
+    width: 100%;
+    height: 100%;
       background: #fe3a80;
       z-index: -2;
       opacity: 1;
-      filter: blur(40px);
+      filter: blur(30px);
     }
     &--shadow1{
         text-shadow: 0 4px 20px $carmesi;
@@ -255,21 +271,27 @@ input{
         }
     }
   }  
-.a1{
-    color: #e6261f!important;
+
+.navlink {
+    font-family: 'Josefin';
+    font-size: 14px;
+    &--a1{
+        color: #e6261f!important;
+    }
+    &--a2{
+        color: #fe6623!important;
+    }
+    &--a3{
+        color: #feed01!important;
+    }
+    &--a4{
+        color: #a3e048!important;
+    }
+    &--a5{
+        color: #0169ff!important;
+    }
 }
-.a2{
-    color: #fe6623!important;
-}
-.a3{
-    color: #feed01!important;
-}
-.a4{
-    color: #a3e048!important;
-}
-.a5{
-    color: #0169ff!important;
-}
+
 .liSub{
     width: 100%;
     background-color: #090d13cc;
@@ -289,7 +311,7 @@ input{
 }
 .mainTittle{
     width: 70%;
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin';
     font-size: 80px;
     text-align: center;
     color: $biche;

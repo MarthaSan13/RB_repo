@@ -36,7 +36,7 @@
   width: 100%;
   display: block;
   border: none;  
-  border-radius: 1em;
+  border-radius: 5px;
   transition: background-color 2s;
 }
 .inpCont:focus{  
@@ -63,7 +63,7 @@
 .seleCont{
   padding: 4px;
   border: none;
-  border-radius: 1em;
+  border-radius: 5px;
 }
 /* FIN ESTILOS PAGINA CONTACTO */
 

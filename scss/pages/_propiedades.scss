@@ -77,6 +77,7 @@
         font-size: 50px;
         color: white;
         font-weight: bold;
+        filter: drop-shadow(2px 2px 2px black);
         &--t2{        
             color: $darkblue;        
         }
@@ -131,6 +132,7 @@
     border: darken($color: $menta, $amount: 30%) solid 2px;
 }
 .myBtn1{
+    display: none;
     background: $turmenic;
     border: darken($color: $turmenic, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -140,6 +142,7 @@
     }
 }
 .myBtn2 {
+    display: none;
     background: $ambar;
     border: darken($color: $ambar, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -150,6 +153,7 @@
     }
 }
 .myBtn3 {
+    display: none;
     background: $menta;
     border: darken($color: $menta, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -160,6 +164,7 @@
     }
 }
 .myBtn4 {
+    display: none;
     background: $palta;
     border: darken($color: $palta, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -170,6 +175,7 @@
     }
 }
 .myBtn5 {
+    display: none;
     background: $indigo;
     border: darken($color: $indigo, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -180,6 +186,7 @@
     }
 }
 .myBtn6 {
+    display: none;
     background: $malva;
     border: darken($color: $malva, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -191,6 +198,7 @@
 }
 
 .myBtn7 {
+    display: none;
     background: $carmesi;
     border: darken($color: $carmesi, $amount: 10%)  solid 2px;
     margin: 30px;

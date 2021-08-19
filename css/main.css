@@ -6,8 +6,17 @@
 }
 
 @font-face {
-  font-family: neon;
-  src: url(hellodenverdisplayregular_v1.6.ttf);
+  font-family: 'Josefin';
+  src: url("../../fonts/JosefinSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'hollowIn';
+  src: url("../../fonts/NeonGlowBold-YxJv.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 html {
@@ -106,7 +115,7 @@ h1 {
 
 p {
   color: #090d13;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   padding: 30px;
   margin: 0px;
@@ -138,6 +147,7 @@ input {
       grid-template-columns: 100%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  overflow: inherit;
 }
 
 .mainBD {
@@ -146,6 +156,7 @@ input {
 }
 
 .headerTBG {
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,10 +164,16 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: #090d13;
+  background-image: url("../img/wall.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -200,13 +217,11 @@ input {
   position: relative;
   top: 0;
   left: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Righteous', cursive;
   font-family: 'Fredoka One', cursive;
+  font-family: 'hollowIn';
   font-weight: lighter;
-  color: #090d13;
-  color: #212529;
-  padding: 0 20px;
+  color: white;
+  padding: 0 10px;
   text-shadow: 0 4px 20px #ff005b;
 }
 
@@ -215,7 +230,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 4px 25px;
+  padding: 2px 15px;
   z-index: -1;
   color: #ff005b;
   -webkit-filter: blur(1px);
@@ -225,15 +240,15 @@ input {
 .neon:before {
   content: '';
   position: absolute;
-  top: 16%;
-  left: 3%;
-  width: 93%;
-  height: 72%;
+  top: 0%;
+  left: 8%;
+  width: 100%;
+  height: 100%;
   background: #fe3a80;
   z-index: -2;
   opacity: 1;
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
 }
 
 .neon--shadow1 {
@@ -327,23 +342,28 @@ input {
   background: #d23be7;
 }
 
-.a1 {
+.navlink {
+  font-family: 'Josefin';
+  font-size: 14px;
+}
+
+.navlink--a1 {
   color: #e6261f !important;
 }
 
-.a2 {
+.navlink--a2 {
   color: #fe6623 !important;
 }
 
-.a3 {
+.navlink--a3 {
   color: #feed01 !important;
 }
 
-.a4 {
+.navlink--a4 {
   color: #a3e048 !important;
 }
 
-.a5 {
+.navlink--a5 {
   color: #0169ff !important;
 }
 
@@ -379,7 +399,7 @@ input {
 
 .mainTittle {
   width: 70%;
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin';
   font-size: 80px;
   text-align: center;
   color: #a3e048;
@@ -415,8 +435,10 @@ input {
   width: 70%;
   padding: 20px 60px;
   color: white;
-  background: #00000030;
-  border-radius: 10em;
+  /*background: #00000030;*/
+  border-radius: 1em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 /* FIN ESTILOS COMPARTIDOS EN TODO EL SITIO */
@@ -486,6 +508,7 @@ input {
 }
 
 .slides__title {
+  font-family: 'Josefin';
   position: relative;
   top: 30px;
 }
@@ -500,21 +523,29 @@ input {
 
 .slides__descrip {
   position: relative;
-  top: 80%;
-  height: 130px;
+  top: 75%;
+  height: 170px;
   width: 100%;
   padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #00000000), to(#090d13));
+  background: linear-gradient(to bottom, #00000000 8%, #090d13 100%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .slides__descrip:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #00000000), color-stop(83%, #090d13));
-  background: linear-gradient(to bottom, #00000000 8%, #090d13 83%);
+  -webkit-backdrop-filter: grayscale(1);
+          backdrop-filter: grayscale(1);
 }
 
 .at1 {
-  color: #9e9e9e;
+  color: #baf113;
   position: relative;
   top: 25px;
+}
+
+.at1:hover {
+  color: #a3e048;
 }
 
 /* INICIO ESTILOS PAGINA CLASIFICACIÓN */
@@ -671,7 +702,7 @@ input {
 }
 
 .menu-clasificacion__link:hover, .descrip-clasificacion .descrip-clasificacion__title:hover {
-  color: #a3e048;
+  color: #baf113;
 }
 
 .menu-clasificacion__pic:hover .menu-clasificacion__tittle {
@@ -742,12 +773,15 @@ input {
 
 .descrip-clasificacion__datos {
   width: 50%;
+  padding: 0px 20px;
 }
 
 .descrip-clasificacion__text {
+  text-align: justify;
   color: #ffffff;
-  background: #00000030;
-  border-radius: 10em;
+  border-radius: 1em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .descrip-clasificacion__text--main {
@@ -881,6 +915,8 @@ input {
   font-size: 50px;
   color: white;
   font-weight: bold;
+  -webkit-filter: drop-shadow(2px 2px 2px black);
+          filter: drop-shadow(2px 2px 2px black);
 }
 
 .propiedades__title--t2 {
@@ -948,6 +984,7 @@ input {
 }
 
 .myBtn1 {
+  display: none;
   background: #fe6623;
   border: #ed4901 solid 2px;
   margin: 30px;
@@ -959,6 +996,7 @@ input {
 }
 
 .myBtn2 {
+  display: none;
   background: #feed01;
   border: #cbbe01 solid 2px;
   margin: 30px;
@@ -971,6 +1009,7 @@ input {
 }
 
 .myBtn3 {
+  display: none;
   background: #a3e048;
   border: #8cd223 solid 2px;
   margin: 30px;
@@ -983,6 +1022,7 @@ input {
 }
 
 .myBtn4 {
+  display: none;
   background: #568203;
   border: #355002 solid 2px;
   margin: 30px;
@@ -995,6 +1035,7 @@ input {
 }
 
 .myBtn5 {
+  display: none;
   background: #0169ff;
   border: #0054cd solid 2px;
   margin: 30px;
@@ -1007,6 +1048,7 @@ input {
 }
 
 .myBtn6 {
+  display: none;
   background: #d23be7;
   border: #be1ad5 solid 2px;
   margin: 30px;
@@ -1019,6 +1061,7 @@ input {
 }
 
 .myBtn7 {
+  display: none;
   background: #e6261f;
   border: #bd1b15 solid 2px;
   margin: 30px;
@@ -1132,7 +1175,7 @@ input {
     font-size: 20px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px;
     text-align: justify;
   }
@@ -1144,16 +1187,22 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: auto;
   }
   .headerT {
     font-size: 32px;
-    padding: 8px;
+    font-size: 40px;
+    padding: 10px 0px;
   }
   .neon {
     padding: 0 8px;
+    padding: 0 5px;
   }
   .neon:after {
     padding: 2px 12px;
+    padding: 4px 8px;
   }
   .mainTittle {
     font-size: 30px;
@@ -1173,6 +1222,7 @@ input {
   }
   .firstSec {
     height: 74vh;
+    padding: 20px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1205,20 +1255,22 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 0px 20px;
   }
   .descrip-clasificacion__pic {
     width: 100%;
     height: 300px;
+    margin: 20px 0px;
     border-radius: 9em;
   }
   .descrip-clasificacion__datos {
     width: 100%;
   }
   .descrip-clasificacion__text {
+    font-size: 16px;
     width: 100%;
-    padding: 20px 30px;
-    border-radius: 2em;
+    padding: 20px 20px;
+    border-radius: 1em;
   }
   .recetas {
     display: -ms-grid;

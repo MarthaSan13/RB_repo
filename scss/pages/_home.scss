@@ -41,6 +41,7 @@
         }
     }
     &__title{
+        font-family: 'Josefin';
         position: relative;
         top: 30px;
         &--t1{
@@ -52,20 +53,24 @@
     }
     &__descrip{
         position: relative;
-        top: 80%;
-        height: 130px;  
+        top: 75%;
+        height: 170px;  
         width: 100%;
         padding: 20px;
-    
+        background: linear-gradient(to bottom, #00000000 8%, #090d13 100%);
+        transition: 1s;
         &:hover{
-            background: linear-gradient(to bottom, #00000000 8%, #090d13 83%);
+            backdrop-filter: grayscale(1);
         }
     }
 }
 .at1{
-    color: #9e9e9e;
+    
+    color: $superbiche;
     position: relative;
     top: 25px;
 }
-
+.at1:hover{
+    color: $biche;
+}
 

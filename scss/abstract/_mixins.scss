@@ -2,8 +2,10 @@
     width: $ancho;
     padding: 20px 60px;
     color: $color;
-    background: #00000030;
-    border-radius: 10em;
+    /*background: #00000030;*/
+    border-radius: 1em;
+    backdrop-filter: blur(10px);
+    
 }
 
 

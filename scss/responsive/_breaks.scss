@@ -15,7 +15,7 @@
         font-size: 20px;
     }
     p {
-        font-size: 18px;
+        font-size: 16px;
         padding: 20px;
         text-align: justify;
     }
@@ -23,17 +23,22 @@
         margin-top: 0px;
     }
     .headerTBG {
-        flex-direction: column;   
+        flex-direction: column; 
+        flex-wrap: nowrap;  
+        height: auto;
     }
     .headerT {
         font-size: 32px;  
-        padding: 8px;
+        font-size: 40px; 
+        padding: 10px 0px;
     }
     .neon {        
         padding: 0 8px;
+        padding: 0 5px;
     }
     .neon:after {        
-        padding: 2px 12px;        
+        padding: 2px 12px;   
+        padding: 4px 8px;     
     }    
     .mainTittle {
         font-size: 30px;
@@ -50,6 +55,7 @@
     }
     .firstSec {
         height: 74vh;
+        padding: 20px;
         justify-content: space-evenly;
     }
     .pClasif {
@@ -74,20 +80,22 @@
     .descrip-clasificacion__content {
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 0px 20px;
     }
     .descrip-clasificacion__pic{
         width: 100%;
         height: 300px;
+        margin: 20px 0px;
         border-radius: 9em;
     }
     .descrip-clasificacion__datos{
         width: 100%;
     }
     .descrip-clasificacion__text{
+        font-size: 16px;
         width: 100%;
-        padding: 20px 30px;
-        border-radius: 2em;
+        padding: 20px 20px;
+        border-radius: 1em;
     }
     .recetas {
         display: grid;
