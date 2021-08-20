@@ -7,14 +7,14 @@
 
 @font-face {
   font-family: 'Josefin';
-  src: url("../../fonts/JosefinSansRegular.ttf") format("truetype");
+  src: url("../fonts/JosefinSansRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'hollowIn';
-  src: url("../../fonts/NeonGlowBold.ttf") format("truetype");
+  src: url("../fonts/NeonGlowBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
