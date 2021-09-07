@@ -1,0 +1,68 @@
+/* INICIO ESTILOS PAGINA CONTACTO */
+.secForm{
+    display: flex;
+    padding: 50px 20px;
+    flex-direction: row;
+    justify-content: center;  
+  }
+  .formOut{
+    width: 40%;
+  }
+  .formInfo{
+    width: 40%;
+    background-image: url('../img/watermelon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .formOne{
+    background-color: #bdce40;
+    padding: 20px;
+    width: auto;
+  }
+  .pInfo{
+    position: relative;
+    top: 60%;
+  }
+  .labelCont{
+    display: inline-block;
+    margin: 15px;
+    font-size: 16px;
+    color: #254d6f;
+  }
+  .inpCont{
+    margin: 0px;
+    padding: 5px 0px;
+    width: 100%;
+    display: block;
+    border: none;  
+    border-radius: 5px;
+    transition: background-color 2s;
+  }
+  .inpCont:focus{  
+    background-color: #89cbef;
+    border: none;
+  }
+  .inpContCh{
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+  }
+  .inpRes{
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    color: #254d6f;
+    margin: 15px 15px 0px 0px;
+    border: black 0px solid;
+    border-radius: 1em;
+    padding: 10px;
+  }
+  .seleCont{
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+  }
+  /* FIN ESTILOS PAGINA CONTACTO */

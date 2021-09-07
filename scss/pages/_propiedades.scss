@@ -109,14 +109,26 @@
     }
     &__text{
         color: white;
+        font-size: 20px;
+        text-align: justify;
+        &--black{
+            color: $darkblue;
+        }
     }
     
 }
 
+.newidth{
+    max-width: 80%;
+}
 .modal-new {  
     backdrop-filter: blur(10px);  
     background: #00000080; 
     border: 1px solid rgba(0,0,0,.2);  
+}
+.modalCont{
+    display: flex;
+    align-items: center;
 }
 .modal-title {
     color: $menta;
@@ -125,14 +137,20 @@
 }
 .pModal{
     color: white;
+    text-align: justify;
 }
 .myCloseBtn {
     color: #000;
     background-color: $menta;
     border: darken($color: $menta, $amount: 30%) solid 2px;
 }
+
+.imgModal{
+    width: 30%;
+    border-radius: 15em;
+}
 .myBtn1{
-    display: none;
+    /*display: none;*/
     background: $turmenic;
     border: darken($color: $turmenic, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -142,7 +160,6 @@
     }
 }
 .myBtn2 {
-    display: none;
     background: $ambar;
     border: darken($color: $ambar, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -153,7 +170,6 @@
     }
 }
 .myBtn3 {
-    display: none;
     background: $menta;
     border: darken($color: $menta, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -164,7 +180,6 @@
     }
 }
 .myBtn4 {
-    display: none;
     background: $palta;
     border: darken($color: $palta, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -175,7 +190,6 @@
     }
 }
 .myBtn5 {
-    display: none;
     background: $indigo;
     border: darken($color: $indigo, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -186,7 +200,6 @@
     }
 }
 .myBtn6 {
-    display: none;
     background: $malva;
     border: darken($color: $malva, $amount: 10%)  solid 2px;
     margin: 30px;
@@ -198,7 +211,6 @@
 }
 
 .myBtn7 {
-    display: none;
     background: $carmesi;
     border: darken($color: $carmesi, $amount: 10%)  solid 2px;
     margin: 30px;

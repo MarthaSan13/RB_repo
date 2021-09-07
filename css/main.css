@@ -26,6 +26,7 @@ html {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-image: url("../img/leaves.jpg");
+  background-image: url(https://images.unsplash.com/photo-1538159021332-8f28e9eca2fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -958,6 +959,16 @@ input {
 
 .propiedades__text {
   color: white;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.propiedades__text--black {
+  color: #090d13;
+}
+
+.newidth {
+  max-width: 80%;
 }
 
 .modal-new {
@@ -965,6 +976,15 @@ input {
           backdrop-filter: blur(10px);
   background: #00000080;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modalCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-title {
@@ -975,6 +995,7 @@ input {
 
 .pModal {
   color: white;
+  text-align: justify;
 }
 
 .myCloseBtn {
@@ -983,8 +1004,13 @@ input {
   border: #527a15 solid 2px;
 }
 
+.imgModal {
+  width: 30%;
+  border-radius: 15em;
+}
+
 .myBtn1 {
-  display: none;
+  /*display: none;*/
   background: #fe6623;
   border: #ed4901 solid 2px;
   margin: 30px;
@@ -996,7 +1022,6 @@ input {
 }
 
 .myBtn2 {
-  display: none;
   background: #feed01;
   border: #cbbe01 solid 2px;
   margin: 30px;
@@ -1009,7 +1034,6 @@ input {
 }
 
 .myBtn3 {
-  display: none;
   background: #a3e048;
   border: #8cd223 solid 2px;
   margin: 30px;
@@ -1022,7 +1046,6 @@ input {
 }
 
 .myBtn4 {
-  display: none;
   background: #568203;
   border: #355002 solid 2px;
   margin: 30px;
@@ -1035,7 +1058,6 @@ input {
 }
 
 .myBtn5 {
-  display: none;
   background: #0169ff;
   border: #0054cd solid 2px;
   margin: 30px;
@@ -1048,7 +1070,6 @@ input {
 }
 
 .myBtn6 {
-  display: none;
   background: #d23be7;
   border: #be1ad5 solid 2px;
   margin: 30px;
@@ -1061,7 +1082,6 @@ input {
 }
 
 .myBtn7 {
-  display: none;
   background: #e6261f;
   border: #bd1b15 solid 2px;
   margin: 30px;
@@ -1152,6 +1172,100 @@ input {
 }
 
 /* FIN ESTILOS PAGINA RECETAS */
+/* INICIO ESTILOS PAGINA CONTACTO */
+.secForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formOut {
+  width: 40%;
+}
+
+.formInfo {
+  width: 40%;
+  background-image: url("../img/watermelon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.formOne {
+  background-color: #bdce40;
+  padding: 20px;
+  width: auto;
+}
+
+.pInfo {
+  position: relative;
+  top: 60%;
+}
+
+.labelCont {
+  display: inline-block;
+  margin: 15px;
+  font-size: 16px;
+  color: #254d6f;
+}
+
+.inpCont {
+  margin: 0px;
+  padding: 5px 0px;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+.inpCont:focus {
+  background-color: #89cbef;
+  border: none;
+}
+
+.inpContCh {
+  margin: 0px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+}
+
+.inpRes {
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
+  color: #254d6f;
+  margin: 15px 15px 0px 0px;
+  border: black 0px solid;
+  border-radius: 1em;
+  padding: 10px;
+}
+
+.seleCont {
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* FIN ESTILOS PAGINA CONTACTO */
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 800px;
+    margin: 1.75rem auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-image: url("../img/peppers.jpg");
@@ -1304,6 +1418,94 @@ input {
     height: auto;
     width: 100%;
   }
+  .tbClasif {
+    -ms-grid-columns: (90px)[4];
+        grid-template-columns: repeat(4, 90px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  .pHead {
+    font-size: 15px;
+  }
+  .pItems {
+    font-size: 15px;
+  }
+  .asImg {
+    width: auto;
+  }
+  .h100 {
+    height: 30vh;
+  }
+  .secForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 20px 20px;
+  }
+  .formOne {
+    width: auto;
+    height: auto;
+  }
+  .labelCont {
+    vertical-align: super;
+    font-size: 15px;
+  }
+  .inpContCh {
+    display: inline;
+    position: relative;
+    top: -5px;
+    height: auto;
+    width: auto;
+  }
+  .seleCont {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .formOut {
+    width: 100%;
+  }
+  .formInfo {
+    width: 100%;
+  }
+  .pInfo {
+    background: #00000094;
+    color: #bdce40;
+  }
+  .descClas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .propIn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .propIn1, .propIn2, .propIn3, .propIn4, .propIn5, .propIn6, .propIn7 {
+    height: 80vh;
+    width: 100%;
+  }
+  .propDesc1, .propDesc2, .propDesc3, .propDesc4, .propDesc5, .propDesc6, .propDesc7 {
+    height: auto;
+    width: 100%;
+  }
+  .cont2, .cont4, .cont6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
@@ -1389,6 +1591,52 @@ input {
   }
   .propiedades__descrip {
     height: auto;
+  }
+  .pInfo {
+    color: #000000;
+    position: relative;
+    top: 0%;
+    padding: 50% 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .formInfo {
+    background-size: cover;
+    background-position: center;
+  }
+  .descClas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+  .propIn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .propIn1, .propIn2, .propIn3, .propIn4, .propIn5, .propIn6, .propIn7 {
+    height: 80vh;
+    width: 100%;
+  }
+  .propDesc1, .propDesc2, .propDesc3, .propDesc4, .propDesc5, .propDesc6, .propDesc7 {
+    height: auto;
+    width: 100%;
+  }
+  .cont2, .cont4, .cont6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 

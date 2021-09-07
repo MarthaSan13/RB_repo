@@ -1,4 +1,11 @@
 
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 800px;
+        margin: 1.75rem auto;
+    }
+}
+
 @media only screen and (max-width: 600px){
     body{
         background-image: url('../img/peppers.jpg');    
@@ -122,6 +129,80 @@
         height: auto;
         width: 100%;
     }
+    .tbClasif {
+        grid-template-columns: repeat(4, 90px);
+        justify-content: center;
+        padding: 0px;
+      }
+      .pHead {
+        font-size: 15px;
+      }
+      .pItems {
+        font-size: 15px;
+      }
+      .asImg {
+        width: auto;
+      }
+     
+      .h100 {
+        height: 30vh;
+      }
+      .secForm {
+        flex-direction: column-reverse;
+        padding: 20px 20px;
+      }
+      .formOne {
+        width: auto;
+        height: auto;
+      }
+      .labelCont {
+        vertical-align: super;
+        font-size: 15px;
+      }
+      .inpContCh {
+        display: inline;
+        position: relative;
+        top: -5px;
+        height: auto;
+        width: auto;
+      }
+      .seleCont {
+        position: relative;
+        top: 0px;
+        left: 5px;
+      }
+      .formOut {
+        width: 100%;
+      }
+      .formInfo {
+        width: 100%;
+      }
+      .pInfo {
+        background: #00000094;
+        color: #bdce40;
+      }
+     
+      .descClas {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+      }  
+     
+      .propIn {
+        flex-direction: column;   
+      }
+      .propIn1, .propIn2, .propIn3, .propIn4, .propIn5, .propIn6, .propIn7{
+        height: 80vh;  
+        width: 100%;
+      }
+      .propDesc1, .propDesc2, .propDesc3, .propDesc4, .propDesc5, .propDesc6, .propDesc7{
+        height: auto;
+        width: 100%;
+      }
+      .cont2, .cont4, .cont6{
+        display: flex;
+        flex-direction: column-reverse;
+      }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px){
@@ -189,6 +270,40 @@
     .propiedades__descrip {
         height: auto;
     }
+    .pInfo {
+        color: #000000;
+        position: relative;
+        top: 0%;
+        padding: 50% 30px;
+        backdrop-filter: blur(10px);
+      }
+      .formInfo {
+        background-size: cover;
+        background-position: center;
+      }
+    
+      .descClas {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+      }
+    
+      .propIn {
+        flex-direction: column;   
+      }
+      .propIn1, .propIn2, .propIn3, .propIn4, .propIn5, .propIn6, .propIn7{
+        height: 80vh;  
+        width: 100%;
+      }
+      .propDesc1, .propDesc2, .propDesc3, .propDesc4, .propDesc5, .propDesc6, .propDesc7{
+        height: auto;
+        width: 100%;
+      }
+      .cont2, .cont4, .cont6{
+        display: flex;
+        flex-direction: column-reverse;
+      }
 }
 
 
