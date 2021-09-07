@@ -25,8 +25,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-image: url("../img/leaves.jpg");
-  background-image: url(https://images.unsplash.com/photo-1538159021332-8f28e9eca2fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80);
+  background-image: url("../img/back.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1010,7 +1009,6 @@ input {
 }
 
 .myBtn1 {
-  /*display: none;*/
   background: #fe6623;
   border: #ed4901 solid 2px;
   margin: 30px;
@@ -1167,10 +1165,6 @@ input {
   color: white;
 }
 
-.h100 {
-  height: 100vh;
-}
-
 /* FIN ESTILOS PAGINA RECETAS */
 /* INICIO ESTILOS PAGINA CONTACTO */
 .secForm {
@@ -1259,13 +1253,6 @@ input {
 }
 
 /* FIN ESTILOS PAGINA CONTACTO */
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 800px;
-    margin: 1.75rem auto;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   body {
     background-image: url("../img/peppers.jpg");
@@ -1418,6 +1405,18 @@ input {
     height: auto;
     width: 100%;
   }
+  .newidth {
+    max-width: 100%;
+  }
+  .modalCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgModal {
+    width: 50%;
+  }
   .tbClasif {
     -ms-grid-columns: (90px)[4];
         grid-template-columns: repeat(4, 90px);
@@ -1434,9 +1433,6 @@ input {
   }
   .asImg {
     width: auto;
-  }
-  .h100 {
-    height: 30vh;
   }
   .secForm {
     -webkit-box-orient: vertical;
@@ -1483,29 +1479,6 @@ input {
     height: auto;
     padding: 20px;
   }
-  .propIn {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .propIn1, .propIn2, .propIn3, .propIn4, .propIn5, .propIn6, .propIn7 {
-    height: 80vh;
-    width: 100%;
-  }
-  .propDesc1, .propDesc2, .propDesc3, .propDesc4, .propDesc5, .propDesc6, .propDesc7 {
-    height: auto;
-    width: 100%;
-  }
-  .cont2, .cont4, .cont6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
@@ -1543,9 +1516,6 @@ input {
   .pClasif {
     width: 90%;
     font-size: 27px;
-  }
-  .h100 {
-    height: 50vh;
   }
   .slides {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -1614,29 +1584,6 @@ input {
             flex-direction: column;
     height: auto;
     padding: 30px;
-  }
-  .propIn {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .propIn1, .propIn2, .propIn3, .propIn4, .propIn5, .propIn6, .propIn7 {
-    height: 80vh;
-    width: 100%;
-  }
-  .propDesc1, .propDesc2, .propDesc3, .propDesc4, .propDesc5, .propDesc6, .propDesc7 {
-    height: auto;
-    width: 100%;
-  }
-  .cont2, .cont4, .cont6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 }
 
