@@ -1405,6 +1405,9 @@ input {
     height: auto;
     width: 100%;
   }
+  .propiedades__text {
+    font-size: 18px;
+  }
   .newidth {
     max-width: 100%;
   }
